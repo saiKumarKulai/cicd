@@ -1,10 +1,6 @@
 name: CICD using Git actions and heroku
 
-on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+on: [push, pull_request]
 
 jobs:
   build:
@@ -21,4 +17,6 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn -B package --file pom.xml
+    - name: Check if uploaded
+      run: pwd
 
