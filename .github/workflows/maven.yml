@@ -15,7 +15,7 @@ jobs:
     - name: CheckOut Moving code from github to VM
       uses: actions/checkout@v3
     - name: Deploying to heroku
-      uses: AkhileshNS/heroku-deploy@3.8.8
+      uses: akhileshns/heroku-deploy@v3.12.12
       with: 
         heroku_api_key: ${{secrets.heroku_api_key}}
         heroku_email: ${{secrets.heroku_email}}
