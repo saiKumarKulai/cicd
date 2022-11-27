@@ -2,9 +2,9 @@ name: CICD using Git actions and heroku
 
 on:
   push:
-    branches: ["main"]
+    branches: ["master"]
   pull_request:
-    branches: ["main"]
+    branches: ["master"]
 
 jobs:
   build:
