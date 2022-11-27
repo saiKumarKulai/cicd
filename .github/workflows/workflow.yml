@@ -1,0 +1,21 @@
+name: CICD using Git actions and heroku
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: CheckOut Moving code from github to VM
+        uses: actions/checkout@v3
+      - name: Deploying to heroku
+        uses: akhileshns/heroku-deploy@v3.12.12
+        with:
+          heroku_api_key: ${{secrets.heroku_api_key}}
+          heroku_email: ${{secrets.heroku_email}}
+          heroku_app_name: ${{secrets.heroku_app}}
