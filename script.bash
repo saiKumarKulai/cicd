@@ -13,3 +13,5 @@ curl \
   -H "Authorization: Bearer ${git_token} \
   https://api.github.com/repos/SaiLuckyAss/learnGitHubActions/pulls \
   -d '{"title":"CI","body":"Body","head":"branch_from_yml","base":"main"}'
+
+cd ../
