@@ -7,5 +7,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: chechout
+        uses: actions/checkout@v3
       - name: raie pr
         run: bash ./script.bash
