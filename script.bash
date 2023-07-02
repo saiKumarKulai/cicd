@@ -10,7 +10,7 @@ git push -u origin branch_from_yml
 curl \
   -X POST \
   -H "Accept: application/vnd.github+json" \
-  -H "Authorization: Bearer ${git_token} \
+  -H "Authorization: Bearer ${git_token}" \
   https://api.github.com/repos/SaiLuckyAss/learnGitHubActions/pulls \
   -d '{"title":"CI","body":"Body","head":"branch_from_yml","base":"main"}'
 
