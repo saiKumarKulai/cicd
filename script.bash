@@ -1,4 +1,4 @@
-git conifg --global user.email "ksai96py@gmai.com"
+git config --global user.email "ksai96py@gmai.com"
 git config --global user.name "saiKumarKulai"
 git clone "https://${git_token}github.com/SaiLuckyAss/learnGitHubActions"
 cd learnGitHubActions
