@@ -3,7 +3,7 @@ git_token=${1}
 
 git config --global user.email "ksai96py@gmai.com"
 git config --global user.name "saiKumarKulai"
-git clone "https://${git_token}github.com/SaiLuckyAss/learnGitHubActions" -b main
+git clone "https://${git_token}@github.com/SaiLuckyAss/learnGitHubActions" -b main
 cd learnGitHubActions
 git checkout -b new_bran
 echo "Heleleo" > xyz.txt
